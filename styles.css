@@ -16,6 +16,7 @@ body {
 
 main {
     margin: 0 auto;
+    padding: 0px 20px;
 }
 
 h1 {
@@ -48,21 +49,28 @@ h1 {
 }
 
 .mi2 {
-    width: 80%;
+    width: 100%;
     flex-wrap: wrap;
 }
 
+.formacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .skills {
     gap: 20px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     justify-content: space-around;
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .img2 {
     width: 360px;
-    height: auto;
     transition: .3s;
     box-shadow: 2px 2px 20px #176cce;
     cursor: pointer;
@@ -70,7 +78,6 @@ h1 {
 
 .img {
     width: 240px;
-    min-width: 140px;
     height: 160px;
     cursor: pointer;
     transition: .3s;
@@ -98,15 +105,42 @@ h1 {
     transition: .3s;
 }
 
+.fa-sass {
+    font-size: 100px;
+    color: #CD6799;
+}
+
+.footer-p {
+    width: auto;
+}
+
 .skills2-active {
-    display: flex;
-    transition: .3s;
+    display: block;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1111;
+    padding: 140px;
+}
+
+p {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .img3 {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
     width: 660px;
     height: auto;
     transition: .3s;
+
 }
 
 .img:hover {
@@ -163,7 +197,7 @@ footer a {
 
 @media (max-width:860px) {
 
-    .left{
+    .left {
         text-align: left;
         margin: 30px auto;
     }
@@ -186,18 +220,26 @@ footer a {
     }
 
     .img {
-        min-width: 140px;
-        min-height: auto;
-        width: 100%;
+        width: 100%
     }
 }
 
 @media (max-width:480px) {
     .skills {
         width: 100%;
+        height: auto;
+    }
+
+    .img {
+        max-height: 160px;
+        height: auto;
     }
 
     .enlaces {
         width: 45%;
+    }
+
+    .img2 {
+        width: 100%;
     }
 }
