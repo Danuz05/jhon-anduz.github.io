@@ -128,7 +128,7 @@ h1 {
 }
 
 p {
-    width: 80%;
+    width: 81%;
     margin: 0 auto;
 }
 
@@ -197,6 +197,9 @@ footer a {
 
 @media (max-width:860px) {
 
+    p{
+        width: 100%;
+    }
     .left {
         text-align: left;
         margin: 30px auto;
