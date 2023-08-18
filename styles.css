@@ -60,7 +60,7 @@ h1 {
     align-items: center;
 }
 .skills {
-    gap: 20px;
+    gap: 30px;
     width: 80%;
     margin: 0 auto;
     justify-content: space-around;
@@ -72,7 +72,8 @@ h1 {
 .img2 {
     width: 360px;
     transition: .3s;
-    box-shadow: 2px 2px 20px #176cce;
+    border-radius: 14px;
+    box-shadow: 2px 2px 20px  rgb(20, 20, 20) ;
     cursor: pointer;
 }
 
@@ -81,7 +82,8 @@ h1 {
     height: 160px;
     cursor: pointer;
     transition: .3s;
-    border-radius: 8px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px  rgb(20, 20, 20) ;
 }
 
 .skills2 {
@@ -130,6 +132,7 @@ h1 {
 p {
     width: 81%;
     margin: 0 auto;
+    text-align: left;
 }
 
 .img3 {
@@ -214,12 +217,6 @@ footer a {
 
     .img2:hover {
         scale: none;
-    }
-
-    .container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
     }
 
     .img {
