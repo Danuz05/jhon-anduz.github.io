@@ -184,7 +184,6 @@ footer a {
     flex-direction: column;
     margin: 2px;
     width: 240px;
-    height: 160px;
 }
 
 .container {
@@ -242,6 +241,7 @@ footer a {
         max-width: 240px;
         min-width: 150px;
         width: auto;
+
     }
 
     .img2:hover {
