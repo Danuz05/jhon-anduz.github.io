@@ -4,6 +4,118 @@
     font-weight: 700;
     color: aliceblue;
     font-family: 'Jost', sans-serif;
+    box-sizing: border-box;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: auto;
+    min-height: 30px;
+}
+
+.tecnologias-2 {
+    margin: 4px 0px;
+    width: auto;
+    height: 20px;
+    padding: 6px;
+    min-width: 38px;
+    font-size: 14px;
+    max-width: 120px;
+    background-color: rgba(226, 217, 217, 0.329);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.712);
+    top: -0%;
+    padding: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.github-link {
+    margin-right: 4px;
+    font-size: 18px;
+    transition: .3s;
+    color: #01bcf3;
+}
+
+.github-link:hover {
+    scale: 1.3;
+}
+
+.descripcion {
+    margin: 4px 0px;
+    font-size: 14px;
+    line-height: 1.1;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+.descripcion-h {
+    margin: 4px 0px 6px;
+    line-height: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    min-height: 20px;
+}
+
+.a2 {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    position: relative;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.a2:hover .card {
+    opacity: 1;
+    visibility: visible;
+    scale: 1.1;
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+}
+
+.a2:hover .img {
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.ruta {
+    text-decoration: none;
+    background-color: #176cce;
+    color: white;
+    border-radius: 6px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px;
+
 }
 
 body {
@@ -34,22 +146,8 @@ h1 {
     font-size: 20px;
 }
 
-#js {
-    font-size: 100px;
-    color: yellow;
-    max-width: 120px;
-}
-
-#html {
-    color: rgb(223, 75, 7);
-    font-size: 100px;
-    max-width: 120px;
-}
-
-#css {
-    font-size: 100px;
-    color: #176cce;
-    max-width: 120px;
+.html-5 {
+    height: 100px;
 }
 
 .fa-sass {
@@ -68,17 +166,25 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .skills {
     gap: 30px;
-    width: 80%;
+    width: auto;
+    min-width: 220px;
+    max-width: 670px;
+    backdrop-filter: blur(0.3rem);
+    -webkit-backdrop-filter: blur(0.3rem);
+    background-color: #fafafa10;
+    border: 2px solid #fafafa10;
+    border-radius: 20px;
     margin: 0 auto;
     justify-content: space-around;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
+    transition: .3s;
 }
 
 .img2 {
@@ -98,6 +204,7 @@ h1 {
     box-shadow: 2px 2px 20px rgb(20, 20, 20);
     width: 100%;
     height: 100%;
+
 }
 
 .skills2 {
@@ -111,16 +218,6 @@ h1 {
     transition: .3s;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
-.close-img {
-    display: flex;
-    position: relative;
-    top: -170px;
-    left: 10px;
-    cursor: pointer;
-    transition: .3s;
-}
-
 
 .footer-p {
     width: auto;
@@ -136,7 +233,6 @@ h1 {
     bottom: 0;
     left: 0;
     z-index: 1111;
-    padding: 140px;
 }
 
 p {
@@ -147,8 +243,8 @@ p {
 
 .img3 {
     position: absolute;
-    top: 25%;
-    left: 40%;
+    top: 32%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 660px;
     height: auto;
@@ -158,12 +254,13 @@ p {
 
 .img:hover {
     transform: scale(1.1);
+    opacity: 100%;
 }
 
 footer {
     padding: 20px;
     margin-top: 30px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 8px;
 }
 
@@ -174,16 +271,6 @@ footer .li {
 footer a {
     color: #019af3;
     font-size: 18px;
-}
-
-.a2 {
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 2px;
-    width: 240px;
 }
 
 .container {
@@ -227,6 +314,14 @@ footer a {
 
 @media (max-width:768px) {
 
+    .html-5 {
+        height: 70px;
+    }
+
+    .fa-sass {
+        font-size: 70px;
+    }
+
     .container {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -241,16 +336,15 @@ footer a {
         max-width: 240px;
         min-width: 150px;
         width: auto;
-
     }
 
     .img2:hover {
         scale: none;
     }
+
 }
 
 @media (max-width:468px) {
-
 
     .container {
         display: flex;
@@ -262,11 +356,6 @@ footer a {
     h1 {
         font-size: 29px;
         margin: 30px 0px;
-    }
-
-    .skills {
-        width: 100%;
-        height: auto;
     }
 
     .enlaces {
